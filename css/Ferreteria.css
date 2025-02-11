@@ -1,0 +1,438 @@
+*{margin: 0;
+    box-sizing: border-box;
+    
+    }
+    html{
+        min-height: 100%;
+    
+    }
+    
+    body{
+    font-family: sans-serif;    
+    width: 100%;
+    height: 100vh;
+    
+     justify-content: center;
+     padding: 90px 20px 0;
+    
+    
+    }
+    p{
+        color: #000;
+        margin: 2em 0;
+    }
+    
+    section#cuerpo{
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+    
+    font-size: 3px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    z-index: 1000000;
+    }
+    
+    
+    
+    .header{
+        background-color:  white;
+        height: 100px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+       z-index: 10;
+        margin: 0 auto;
+    }
+    .nav-link{
+        color: wheat;
+        text-decoration: none;
+    }
+    .nav-menu{
+        display: flex;
+        margin-right: 40px;
+        list-style: none;
+    }
+    .nav-menu-item{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 80px;
+        text-transform: uppercase;
+        width: max-content;
+        
+    }
+    .nav-menu-link a:hover{
+        background-color:  #0874c4;
+        border-radius: 10px;
+        padding: 10px 50px;
+        transition: all .25s;
+    }
+    
+    
+    .nav-menu-link{
+        padding: 8px 10px;
+        border-radius: 3px;
+    }
+    .texto1 {
+        text-decoration-color: black;
+    }
+    
+    a{ 
+    border: 2px solid #0874c4;
+    background-color: #0874c4;
+     color:white;
+     padding: 0.6em 3.5em;
+     font-size: 0.9em;
+     text-decoration: none;
+     border-radius: 50px;
+     margin: auto 
+     
+       
+    }
+    @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    
+    
+    ::-webkit-scrollbar {
+        width:20px;
+    }
+    .galeria{
+        background-image: url(https://crm.aftgrupo.com/documentacion/70/43881.jpg);
+        background: no-repeat fixed;
+        font-family: 'open sans';
+        margin: 0 auto;
+        
+    }
+    
+    .galeria h1{
+        text-align: center;
+        margin:20px 0 15px 0;
+        font-weight: 300;
+    }
+    
+    .linea{
+        border-top: 5px solid #0077C0;
+        margin-bottom: 40px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .contenedor-imagenes{
+        display:flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius:3px;
+        
+    }
+    
+    .contenedor-imagenes .imagen{
+        width: 32%;
+        position: relative;
+        height:250px;
+        margin-bottom:5px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+    }
+    .imagen img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background:rgba(5, 159, 255, 0.781) ;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+    
+    .overlay h2{
+        color: #fff;
+        font-weight: 40px;
+        font-size:30px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .imagen:hover .overlay{
+        height:100%;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width:1000px){
+        .contenedor-imagenes{
+            width: 95%;
+        }
+        .banner{
+            width: 95%;
+        }
+        h1{
+            font-size: 20vh;
+        }
+    }
+    
+    @media screen and (max-width:700px){
+        .contenedor-imagenes{
+            width: 90%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 48%;
+        }
+        .banner{
+            width: 90%;
+        }
+    }
+    
+    @media screen and (max-width:450px){
+        h1{
+            font-size:22px;
+        }
+        .contenedor-imagenes{
+            width: 98%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 80%;
+        }
+        .banner{
+            width: 80%;
+        }
+       .h1{
+           font-size: 20vh;
+       }
+    }
+    
+    .banner{
+        width: 100%;
+       
+        height: 700px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 0px;
+        background:  fixed center  url(https://crm.aftgrupo.com/documentacion/70/43881.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+    }
+    
+    .banner_description{
+        width: 90%;
+        max-width: 1000px;
+        display: block;
+        margin: auto;
+    }
+    p{
+        font-size: large;
+    }
+    .contacto{
+        align-items: center;
+    }
+    .banner_description{
+        color: white;
+    }
+    .textp{
+        color: white;
+    }
+    #footer{
+        background: white;
+        width: 100%;
+        margin: 0px;
+    }
+    .footer2{
+        
+        margin: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    #pie-footer{
+        background: white;
+        width: 100%;
+        height: auto;
+    }
+    .titulo-footer{
+        color: black;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        top: 10px;
+    }
+    .span-subtitulo{
+        color: #0077C0;
+        font-weight: 500;
+    }
+    .contacto{
+        color: black;
+        font-size: 20px;
+        font-weight: 800px;
+    }
+    .titulo-contacto{
+        color: black;
+    
+    }
+    #localizacion{
+        color: yellow;
+        font-size: 25px;
+    }
+    .titulo-colonia{
+        color: black;
+        margin: 10px;
+    }
+    .cursor{
+        border: 2px solid #0077C0;
+        background-color: #0077C0;
+        color: white;
+        border-radius: 3px;
+    }
+    .funcione{
+        font-size: 80px;
+    }
+    .cursor1{
+        border: 1px solid #fff;
+        color: white;
+        border-radius: 2px;
+        border-style: dotted;
+        
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #0077C0;
+    }
+    
+    nav{
+        background: white;
+        height: 80px;
+        width: 100%;
+    }
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .logo{
+        height: 90px;
+        
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    a{
+        border: 2px solid #0874c4;
+        background-color: #0874c4;
+        color: white;
+        padding: 0.6em 3.5em;
+        font-size: 0.9em;
+        text-decoration: none;
+        border-radius: 50px;
+        margin: auto;
+    }
+    
+    .cursor44{
+        border: 1px solid white;
+        border-radius: 1px 2px 3px;
+        height: auto;
+        width: auto;
+    }
+    nav ul li {
+        color: #fff;
+        font-size: 22px;
+        padding: 7px 13px;
+        border-radius: 50px;
+        text-transform: uppercase;
+    }
+    .botoncito:hover{
+        background: #000090;
+        transition: 0.5s; 
+    }
+    li a:hover{
+        background: #000090;
+        transition: 0.5s;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: #0874c4;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    section{
+        background: url(https://www.zarla.com/images/zarla-construye-fcil-1x1-2400x2400-20220117-pm7kqpy3rvk8gthwp644.png?crop=1:1,smart&width=250&dpr=2) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: calc(100vh - 80px);
+    }
+    
+    @media (max-width: 952px){
+        .enlace{
+            padding-left: 20px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: white;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+    }
